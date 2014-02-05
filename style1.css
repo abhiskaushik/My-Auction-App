@@ -1,0 +1,305 @@
+.title_ppl{
+width:100%;
+height:4%;
+border-radius:1%;
+//background:rgb(34,45,32);
+}
+
+h2{
+text-align:center;
+color:white;
+}
+.country_players{
+height:20%;
+width:10%;
+background:white;
+border-radius:10%;
+padding:0;
+margin:0;
+}
+#ind{
+position:absolute;
+left:1%;
+background:DarkSlateGray; 
+
+}
+.country_players img{
+padding: 3px;  
+border:  1px solid #ccc;  
+background-color: #eee;  
+width:  100%; 
+height: 100%;
+position:absolute; 
+top:  0; 
+left: 0 
+
+
+}
+#pak{
+position:absolute;
+left:12%;background:DarkSalmon ;
+}
+#eng{
+position:absolute;
+left:23%;background:Cyan ;
+}
+#sa{
+position:absolute;
+left:34%;background:DimGray ;
+}
+#aus{
+position:absolute;
+left:45%;background:Teal;
+}
+#wi{
+position:absolute;background:Tomato ;
+left:56%;
+
+}
+#nz{
+
+position:absolute;
+left:67%;background:YellowGreen ;
+}
+#sl{
+position:absolute;
+left:78%;background:LightCoral ;
+}
+#ban{
+position:absolute;
+left:89%;background:Lavender ;
+}
+.current_bid{
+ position:absolute;
+ top:38%; 
+left:3%; 
+ height:23%;
+ width:20%;
+ background:rgb(11,37,83);
+border-radius:10%;
+}
+#cb_title{
+text-align:center;font-family:cursive;font-weight:bold;font-size:20px;
+color:white;
+}
+#cb_team{
+height:80%;
+width:40%; margin-left:5%;
+background:yellow;
+border-radius:10%;
+text-align:center;font-family:cursive;font-weight:bold;font-size:15px;
+color:black;
+}
+#cb_price{
+height:80%;
+width:40%; margin-left:55%;position:absolute;top:16%;
+background:lightblue;
+border-radius:10%;
+text-align:center;font-family:cursive;font-weight:bold;font-size:15px;
+color:black;
+}
+.team_bid_table{
+ 
+ height:50%;
+ width:15%;
+ background:Lavender;
+position:absolute; top:28%;right:2%;overflow:hidden;
+}
+
+#team1{
+height:10%;
+background:rgba(0,0,0,0.8);
+width:97%;position:absolute;top:2%;border-radius:5%;
+}
+#team2{
+height:10%;
+background:rgba(0,0,0,0.8);
+width:97%;position:absolute;top:14%;border-radius:5%;
+}
+#team3{
+height:10%;
+background:rgba(0,0,0,0.8);
+width:97%;position:absolute;top:26%;border-radius:5%;
+}
+#team4{
+height:10%;
+background:rgba(0,0,0,0.8);
+width:97%;position:absolute;top:38%;border-radius:5%;
+}
+#team5{
+height:10%;
+background:rgba(0,0,0,0.8);
+width:97%;position:absolute;top:50%;border-radius:5%;
+}
+#team6{
+height
+:10%;
+background:rgba(0,0,0,0.8);
+width:97%;position:absolute;top:62%;border-radius:5%;
+}
+#team7{
+height:10%;
+background:rgba(0,0,0,0.8);
+width:97%;position:absolute;top:74%;border-radius:5%;
+}
+#team8{
+height:10%;
+background:rgba(0,0,0,0.8);
+width:97%;position:absolute;top:86%;border-radius:5%;
+}
+.t_name{
+font-family:cursive;font-size:15px;font-weight:bold;
+color:white; position:absolute; left:0%;
+}
+.t_price{
+font-family:cursive;font-size:20px;font-weight:bold;
+color:lightblue;position:absolute;right:5%;
+}
+#team1P{
+position:absolute;right:10%;
+}
+#team2P{
+position:absolute;right:10%;
+}
+#team3P{
+position:absolute;right:10%;
+}
+#team4P{
+position:absolute;right:10%;
+}
+#team5P{
+position:absolute;right:10%;
+}
+#team6P{
+position:absolute;right:10%;
+}
+#team7P{
+position:absolute;right:10%;
+}
+#team8P{
+position:absolute;right:10%;
+}
+.your_team{
+
+height:10%;
+width:5%;
+background:white;
+border-radius:5%;
+position:absolute;bottom:2%;
+}
+#p1{
+position:absolute;
+left:1%;
+background:DarkSlateGray; 
+}
+#p2{
+position:absolute;
+left:7%;background:DarkSalmon ;
+}
+#p3{
+position:absolute;
+left:13%;background:Cyan ;
+}
+#p4{
+position:absolute;
+left:19%;background:DimGray ;
+}
+#p5{
+position:absolute;
+left:25%;background:Teal;
+}
+#p6{
+position:absolute;background:Tomato ;
+left:31%;
+
+}
+#p7{
+
+position:absolute;
+left:37%;background:YellowGreen ;
+}
+#p8{
+position:absolute;
+left:43%;background:LightCoral ;
+}
+#p9{
+position:absolute;
+left:49%;background:Lavender ;
+}
+#p10{
+position:absolute;
+left:55%;background:Lavender ;
+}
+#p11{
+position:absolute;
+left:61%;background:Lavender ;
+}
+#p12{
+position:absolute;
+left:67%;background:Lavender ;
+}
+#p13{
+position:absolute;
+left:73%;background:Lavender ;
+}
+#p14{
+position:absolute;
+left:79%;background:Lavender ;
+}
+#p15{
+position:absolute;
+left:85%;background:Lavender ;
+}
+#credit{
+position:absolute;left:91%;bottom:8%;height:8%;width:8%;background:Cyan;border-radius:50%;
+text-align:center;font-family:cursive;font-weight:bold;font-size:15px;
+color:black;
+}
+#debited{
+position:absolute;left:91%;bottom:0%;height:8%;width:8%;background:grey;border-radius:50%;
+text-align:center;font-family:cursive;font-weight:bold;font-size:15px;
+color:black;
+}
+#current_name{
+position:absolute;
+left:46%;top:30%;height:4%;width:13%;background:white;
+}
+#current_player{
+position:absolute;
+left:46%;top:34%;height:34%;width:13%;background:rgba(0,40,60,0.8);
+box-shadow:1px 1px 1px yellow;
+}
+.arrow-right {
+	width: 0; position:absolute;left:60%;top:28%;
+	height: 0; 
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid transparent;
+	cursor:pointer;
+	border-left: 40px solid green;
+}
+.arrow-left {
+	width: 0; position:absolute; left:42%; top:28%;
+	height: 0; 
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid transparent; 
+	cursor:pointer;
+	border-right:40px solid blue; 
+}
+#batting_stats{
+position:absolute;
+left:30%;top:42%;height:25%;width:14%;background:white;
+box-shadow:2px 2px 2px yellow;
+
+}
+
+#bowling_stats{
+position:absolute;
+left:61%;top:42%;height:25%;width:14%;background:white;
+box-shadow:2px 2px 2px yellow;
+}
+.bid_value{
+font-family:cursive;font-weight:bold;font-size:20px;
+position:absolute;left:46%;top:72%;width:13%;height:6%;text-align:center;
+
+
+}

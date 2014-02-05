@@ -1,0 +1,242 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css"> 
+<script src="jquery.js"></script> 
+ <script src="/socket.io/socket.io.js"></script>
+<!--<script src='front.js' type='text/javascript'>-->
+<!--<script src="http://malsup.github.io/jquery.cycle.all.js" type="text/javascript"></script> -->
+<script src='cycle.js' type='text/javascript'> </script>
+<title>PPL online Auction</title>
+
+<script type="text/javascript">
+$(function(){
+        $('#ind').cycle('zoom');
+    });
+$(function(){
+        $('#aus').cycle('growY');
+    });
+
+$(function(){
+        $('#ban').cycle({ 
+       fx: 'turnDown', 
+      delay:   -4000 
+});
+});
+$(function(){
+        $('#eng').cycle('growX');
+    });
+$(function(){
+    $('#sl').cycle({ 
+    fx:    'curtainX', 
+    sync:  false, 
+    delay: -2000 
+ });
+    });
+$(function(){
+        $('#nz').cycle({ 
+       fx: 'turnDown', 
+      delay:   -4000 
+});
+    });
+$(function(){
+        $('#pak').cycle('growY');
+    });
+$(function(){
+         $('#sa').cycle({ 
+       fx: 'turnDown', 
+      delay:   -4000 
+});
+    });
+$(function(){
+        $('#wi').cycle('growX');
+    });
+
+
+</script>
+<script>
+// socket.io code....
+ var socketio=io.connect("127.0.0.1:8006");
+
+//var info=[['M.S Dhoni','dhoni.jpg'],['Gautam Gambhir','gauti.jpg'],['Kevin Peterson','kevin.jpg'],['Corey Anderson','andy.jpg']];
+//var i=0;
+socketio.on('date', function(data){;
+ //var info=[['M.S Dhoni','dhoni.jpg'],['Gautam Gambhir','gauti.jpg'],['Kevin Peterson','kevin.jpg'],['Corey Anderson','andy.jpg']];
+
+        document.getElementById('timer').innerHTML='Time:&nbsp'+ data.date + '&nbspSeconds';
+      if(data.date%10==0){
+         next_player();
+ //document.getElementById('current_name').innerHTML=info[0][i];   
+  //document.getElementById('cur_plyer').src=info[1][i];
+}
+});
+
+ socketio.on("message_to_client",function(data){
+ document.getElementById('current_bid').innerHTML='Rajasthan Royals'+ '</br>' + (data['message']);
+});
+/*
+socketio.on("img_changeClient",function(data){
+ document.getElementById('current_name').innerHTML=data.img; 
+});
+*/
+function sendMessage() {
+  
+    var msg = document.getElementById("bid_val").value;
+    socketio.emit("message_to_server", { message : msg});
+     document.getElementById("bid_val").value='';
+}
+/* 
+ // on load of page
+  $(function(){
+    // when the client clicks SEND
+    $('#send').click( function() {
+      var message = $('#bid_val').val();
+      $('bid_val').val('');
+      // tell server to execute 'sendchat' and send along one parameter
+      socketio.emit('message_to_server', msg);
+    });
+
+    // when the client hits ENTER on their keyboard
+    $('#bid_val').keypress(function(e) {
+      if(e.which == 13) {
+        $(this).blur();
+        $('#send').focus().click();
+      }
+    });
+  });
+*/
+var i=0;
+function next_player(){
+//var info=[['M.S Dhoni','andy.jpg'],['Gautam Gambhir','andy.jpg'],['Kevin Peterson','andy.jpg'],['Corey Anderson','andy.jpg']];
+ 
+var info=[['AB de Villiers','/player/abd.jpg.jpg'],['Abhinav Mukund','/player/amukund.jpg.jpg'],['Adam Gilchrist','/player/agilchrist.jpg.jpg'],['Ajantha Mendis','player/amendis.jpg.jpg'],['Albie Morkel','player/amorkel.jpg.jpg'],['Andre Russell','player/arussell.jpg.jpg'],['Andrew Symonds','player/asymonds.jpg.jpg'],['Angelo Mathews','player/amathews.jpg.jpg'],['Anil Kumble','player/akumble.jpg.jpg'],['Ashish Nehra','player/anehra.jpg.jpg'],['Ashish Reddy','player/areddy.jpg.jpg'],['Ashwell Prince','player/aprince.jpg.jpg'],['Azhar Mahmood','player/amahmood.jpg.jpg'],['Ben Laughlin','player/alaughlin.jpg.jpg']];//,['Camron White','player/cwhite.jpg.jpg'],['Chaminda Wass','player/cwass.jpg.jpg'],['Chris Gayle','player/cgayle.jpg.jpg'],['Chris Lynn','player/clynn.jpg.jpg'],['Clint McKay','player/cmckay.jpg.jpg'],['Dale Steyn','player/dsteyn.jpg.jpg'],['Daniel Christian','player/dchristian.jpg.jpg'],['Daniel Vettori','player/dvettori.jpg.jpg'],['Darren Sammy','player/dsammy.jpg.jpg'],['Davy Jacobs','player/djacobs.jpg.jpg'],['Derk Nannes','player/dnannes.jpg.jpg'],['Dillon du Preez','player/ddpreez.jpg.jpg'],['Dimitry Mascarenhas','player/dmascarenhas.jpg.jpg'],['Doug Bollinger','player/dbollinger.jpg.jpg'],['Dwayne Bravo','player/dbravo.jpg.jpg'],['Dwayne Smith ','player/dsmith.jpg.jpg'],['Eoin Morgan','player/emorgon.jpg.jpg'],['Glenn Maxwell','player/gmaxwell.jpg.jpg'],['Graeme Smith','player/gsmith.jpg.jpg'],['Harbhajan Singh','player/hsingh.jpg.jpg'],['Herschelle Gibbs','player/hgibbs.jpg.jpg'],['Ishant Sharma','player/isharma.jpg.jpg'],['Jacques Kallis','player/jkallis.jpg.jpg'],['James Faulkner','player/jfaulkner.jpg.jpg'],['James Franklin','player/jfranklin.jpg.jpg'],['Jesse Ryder','player/jryder.jpg.jpg'],['JP Duminy','player/duminy.jpg.jpg'],['Kamran Akmal','player/kakmal.jpg.jpg'],['Kane Richardson','player/krichardson.jpg.jpg'],['Kevin Pietersen','player/kpietersen.jpg.jpg'],['Kevon Cooper','player/kcooper.jpg.jpg'],['Kieron Pollard','player/kpollard.jpg.jpg'],['Kumar Sangakara','player/ksangakara.jpg.jpg'],['Kushal Janith Perera','player/perera.jpg.jpg'],['Kyle Mills','player/kmills.jpg.jpg'],['Lakshmipathy Balaji','player/lbalaji.jpg.jpg'],['Lasith Malinga','player/lmalinga.jpg.jpg'],['Loots Bosman','player/lbosman.jpg.jpg'],['Luke Pomersbach','player/lpomersbach.jpg.jpg'],['Luke Wright','player/lwright.jpg.jpg'],['Mahela Jayawardhane','player/mjayawardhane.jpg.jpg'],['Mahendra Singh Dhoni','player/dhoni.jpg.jpg'],['Makhaya Ntini','player/ntini.jpg.jpg'],['Mark Boucher','player/boucher.jpg.jpg'],['Marlon Samules','player/msamules.jpg.jpg'],['Martin Guptill','player/mguptill.jpg.jpg'],['Matthew Hayden','player/mhayden.jpg.jpg'],['Michelle Clarke','player/mclarke.jpg.jpg'],['Mike Hussey','player/mhussey.jpg.jpg'],['Misbah-ul-Haq','player/ulhaq.jpg.jpg'],['Mohammad Ashraful','player/ashraful.jpg.jpg'],['Mohammad Hafeez','player/hafeez.jpg.jpg'],['Moises Henriques','player/henriques.jpg.jpg'],['Morne Morkel','player/morkel.jpg .jpg'],['Murali Vijay','player/vijay.jpg.jpg'],['Muttiah Muralidharan','player/murlidharan.jpg.jpg'],['Nathan Bracken','player/bracken.jpg.jpg'],['Nathan Coulter-Nile','player/nile.jpg.jpg'],['Nathan Mccullam','player/mccullam.jpg.jpg'],['Omais Shah','player/oshah.jpg.jpg'],['Philip Hughes','player/hughes.jpg.jpg'],['Pinal Shah','player/shah.jpg.jpg'],['Pragyan Ojha','player/ojha.jpg.jpg'],['Praveen Kumar','player/praveen.jpg.jpg'],['Rahul Dravid','player/dravid.jpg.jpg'],['Rahul Sharma','player/sharma.jpg.jpg'],['Ravi Rampaul','player/rampaul.jpg.jpg'],['Richard Levi','player/levi.jpg.jpg'],['Ricky Ponting','player/ponting.jpg.jpg'],['Robin Uthappa','player/uthappa.jpg.jpg'],['Rohit Sharma','player/rohit.jpg.jpg'],['Ross Taylor','player/tylor.jpg.jpg'],['Ryan ten Doeschate','player/ryan.jpg.jpg'],['Sachin Tendulkar','player/sachin.jpg.jpg'],['Sachithra Senanayake','player/senanayake.jpg.jpg'],['Salman Butt','player/butt.jpg.jpg'],['Samuel Badree','player/badree.jpg.jpg'],['Sanath Jayasurya','player/jayasurya.jpg.jpg'],['Saurabh Tiwari','player/saurabh.jpg.jpg'],['Scott Styris','player/scott.jpg.jpg'],['Shahid Afridi','player/afridi.jpg.jpg'],['Shakib Al Hasan','player/hasan.jpg.jpg'],['Shaun Pollock','player/pollock.jpg.jpg'],['Shikhar Dhawan','player/dhawan.jpg.jpg'],['Shoaib Akhtar','player/akhtar.jpg.jpg'],['Shoiab Malik','player/malik.jpg.jpg'],['Sohail Tanvir','player/tanvir.jpg.jpg'],['Sunil Narine','player/narine.jpg.jpg'],['Suresh Raina','player/raina.jpg.jpg'],['Tamim Iqbal','player/iqbal.jpg.jpg'],['Thillakratne Dilshan','player/dilshan.jpg.jpg'],['Thisara Perera','player/perera.jpg.jpg'],['Umar Gul','player/gul.jpg.jpg'],['Younis Khan','player/younis.jpg.jpg'],['Zaheer Khan','player/zaheer.jpg.jpg']];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ document.getElementById('current_name').innerHTML=info[i][0];   
+ document.getElementById('cur_plyer').src=info[i][1];
+i++;
+}
+</script>
+
+</head>
+<body bgcolor="black">
+<div class="title_ppl"><marquee  loop="-1" scrollamount="2" style="color:white" width="100%">Welcome to Auction Round! &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Pragyan heatedly Welcomes you all! &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Powered by &copy Delta Force-Nit Trichy  </marquee> </div>
+<div class="country_players" id="ind">
+  <img src="http://www.surfindia.com/celebrities/sport-stars/gifs/gautam-gambhir.jpg"  height="100%" width="100%"  />
+ <img src="http://cricbol.com/blog/wp-content/uploads/2012/10/suresh_raina_profile.jpg" height="100%" width="100%"   />
+ <img src="http://indiaopines.com/wp-content/uploads/2013/12/ashwin-cskjpg.jpg" height="100%" width="100%"  />
+ <img src="http://www.cricketworld4u.com/player-images/68.jpg" height="100%" width="100%"/>
+  <img src="http://sim04.in.com/25/c3a53f39884290f12b12f26534c95b75_m.jpg" height="100%" width="100%"/>
+  <img src="http://p.imgci.com/db/PICTURES/CMS/158600/158688.1.jpg" height="100%" width="100%"/>
+ <img src="http://www.boxtv.com/ipl/assets/news/yusuf-pathan-becomes-first-player-to-win-ipl-with-two-teams-1271.jpg"  height="100%" width="100%" />
+ <img src="http://images.mumbaiindians.com/Players/130093031131693975Rohit-Sharma.jpg" height="100%" width="100%" />
+ <img src="http://p.imgci.com/db/PICTURES/CMS/116700/116711.jpg"  height="100%" width="100%"  />
+ <img src="http://p.imgci.com/db/PICTURES/CMS/158600/158672.1.jpg"  height="100%" width="100%" />
+  <img src="http://sports.heartjohn.com/wp-content/uploads/2012/02/virender-sehwag-photos-by-sports-heartjohn-com-129.jpg" height="100%" width="100%" />
+  <img src="http://p.imgci.com/db/PICTURES/CMS/153100/153180.1.jpg" height="100%" width="100%"  />
+ <img src="http://p.imgci.com/db/PICTURES/CMS/158600/158686.1.jpg"  height="100%" width="100%" />
+  <img src="http://www.thehindu.com/multimedia/dynamic/01236/TH14_RAHANE_1236817e.jpg"  height="100%" width="100%" />
+  <img src="http://www.bolegaindia.com/images/gossips/shami-ahmed-post_1359800353.jpg"  height="100%" width="100%" />
+
+</div>
+<div class="country_players" id="aus">
+<img src="http://www.bolegaindia.com/images/gossips/shane-watson-post_1350380598.jpg"  height="100%" width="100%"  />
+ <img src="http://cric-info.info/wp-content/uploads/2013/09/Mitch-Johnson1.jpg" height="100%" width="100%"  />
+  <img src="http://cricketssport.com/wp-content/uploads/2013/12/146176.jpg" height="100%" width="100%"/>
+</div>
+<div class="country_players" id="wi">
+<img src="http://farm9.staticflickr.com/8320/7996580542_4178fe8918_o.jpg"   height="100%" width="100%" />
+<img src="http://www.caribdirect.com/wp-content/uploads/2011/10/Darren_Sammy_300.jpg" height="100%" width="100%"  />
+<img src="http://p.imgci.com/db/PICTURES/CMS/144900/144988.jpg"  height="100%" width="100%"  />
+<img src="http://news.power102fm.com/wp-content/uploads/2013/01/Dwayne_Bravo_588984.jpg"   height="100%" width="100%" />
+<img src="http://topnews.in/sports/files/Kieron-Pollard_6.jpg"  height="100%" width="100%"  />
+<img src="http://p.imgci.com/db/PICTURES/CMS/158700/158720.1.jpg"  height="100%" width="100%" />
+<img src="http://farm9.staticflickr.com/8320/7996580542_4178fe8918_o.jpg"  height="100%" width="100%" />
+<img src="http://www.caribdirect.com/wp-content/uploads/2011/10/Darren_Sammy_300.jpg" height="100%" width="100%" />
+
+</div>
+<div class="country_players" id="sa">
+<img src="http://cricresults.com/images/AB-de-Villiers.jpg"  height="100%" width="100%"  />
+<img src="http://p.imgci.com/db/PICTURES/CMS/128500/128500.jpg"  height="100%" width="100%" />
+<img src="http://p.imgci.com/db/PICTURES/CMS/128400/128494.jpg"  height="100%" width="100%"  />
+<img src="http://p.imgci.com/db/PICTURES/CMS/128500/128511.jpg"  height="100%" width="100%"  />
+<img src="http://cricresults.com/images/AB-de-Villiers.jpg"  height="100%" width="100%" />
+<img src="http://p.imgci.com/db/PICTURES/CMS/128500/128500.jpg"  height="100%" width="100%" />
+</div>
+<div class="country_players" id="pak">
+<img src="http://p.imgci.com/db/PICTURES/CMS/158600/158697.1.jpg"  height="100%" width="100%"  />
+<img src="http://beingpakistani.com/wp-content/uploads/2013/01/Junaid_Khan.jpg"  height="100%" width="100%" />
+</div>
+<div class="country_players" id="nz">
+<img src="andy.jpg"  height="100%" width="100%"  />
+<img src="http://static.ecb.co.uk/images/width151/ross-taylor-100382.jpg"  height="100%" width="100%"  />
+</div>
+<div class="country_players" id="sl">
+<img src="http://i.telegraph.co.uk/multimedia/archive/01828/Kumar_Sangakkara_1828921i.jpg" height="100%" width="100%"   />
+<img src="http://p.imgci.com/db/PICTURES/CMS/128400/128438.1.jpg" height="100%" width="100%"  />
+</div>
+<div class="country_players" id="eng">
+<img src="http://1.bp.blogspot.com/--kUYM7JIPy8/TXG5_gov1oI/AAAAAAAAAd4/RlVVv1JCU9I/s400/kevin.jpeg"  height="100%" width="100%"  />
+<img src="http://en.cricnama.com/wp-content/uploads/2013/04/Eoin-Morgan.jpg"  height="100%" width="100%" />
+</div>
+<div class="country_players" id="ban">
+<img src="http://topnews.in/sports/files/Shakib-al-Hasan.jpg"  height="100%" width="100%" />
+<img src="http://3.bp.blogspot.com/-2YJxMkd9_aY/UDNssjDaSnI/AAAAAAAAAbk/mnWJNITam98/s400/mahmudullah.jpg"  height="100%" width="100%" />
+</div>
+<div id="current_bid">
+<div id="cb_title">Current Bid</div>
+
+</div>
+<div id="timer"></div>
+<div class="team_bid_table">
+<div class="team_bid_table" id="team1"><div class="t_name" id="team1N">Team1</div><div id="team1P">Rs.1</div></div>
+<div class="team_bid_table" id="team2"><div class="t_name" id="team2N">Team2</div><div id="team2P">Rs.1</div></div>
+<div class="team_bid_table" id="team3"><div class="t_name" id="team3N">Team3</div><div id="team3P">Rs.1</div></div>
+<div class="team_bid_table" id="team4"><div class="t_name" id="team4N">Team4</div><div id="team4P">Rs.1</div></div>
+<div class="team_bid_table" id="team5"><div class="t_name" id="team5N">Team5</div><div id="team5P">Rs.1</div></div>
+<div class="team_bid_table" id="team6"><div class="t_name" id="team6N">Team6</div><div id="team6P">Rs.1</div></div>
+<div class="team_bid_table" id="team7"><div class="t_name" id="team7N">Team7</div><div id="team7P">Rs.1</div></div>
+<div class="team_bid_table" id="team8"><div class="t_name" id="team8N">Team8</div><div id="team8P">Rs.1</div></div>
+</div>
+<div class="your_team" id="p1"><img src="http://www.caribdirect.com/wp-content/uploads/2011/10/Darren_Sammy_300.jpg"  width="100%" height="100%"  /></div>
+<div class="your_team" id="p2"><img src="http://cricresults.com/images/AB-de-Villiers.jpg"  width="100%" height="100%"  /></div>
+<div id='ytn'>Rajasthan Royals:</div>
+<div class="your_team" id="p3">
+<img src="http://www.surfindia.com/celebrities/sport-stars/gifs/gautam-gambhir.jpg"  width="100%" height="100%"  /></div>
+<div class="your_team" id="p4"></div>
+<div class="your_team" id="p5"></div>
+<div class="your_team" id="p6"></div>
+<div class="your_team" id="p7"></div>
+<div class="your_team" id="p8"></div>
+<div class="your_team" id="p9"></div>
+<div class="your_team" id="p10"></div>
+<div class="your_team" id="p11"></div>
+<div class="your_team" id="p12"></div>
+<div class="your_team" id="p13"></div>
+<div class="your_team" id="p14"></div>
+<div class="your_team" id="p15"></div>
+<div id="credit">Credits</div>
+<div id="current_name"></div>
+<div id="current_player">
+<img id='cur_plyer' src="http://www.bolegaindia.com/images/gossips/shane-watson-post_1350380598.jpg" height="100%" width="100%"    />
+
+</div>
+<div class="arrow-right"></div>
+<div class="arrow-left"></div>
+<div id="batting_stats"></div>
+<div id="bowling_stats"></div>
+<input type="text" required id="bid_val" class="bid_value" placeholder="Enter you bid" autofocus ></input>
+<input type="button" id="send" value="Throw Your Bid!" onclick="sendMessage()" />
+</body>
+</html>

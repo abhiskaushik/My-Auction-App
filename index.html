@@ -1,0 +1,71 @@
+
+<html>
+<head>
+    <title>Ppl Online Auction</title>
+  <link rel="stylesheet" href="index_style.css" type="text/css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+    <script src="jquery.js"></script>
+  <!--  <script>
+        var socket = io.connect('http://localhost:4000');
+       
+ 
+           socket.on('connect', function(){
+    
+    socket.emit('adduser', prompt("Enter PPL Id for you Team!"));
+ });
+ 
+    </script>  -->
+
+</head>
+<body>
+ 
+<div id='curtains'>
+<img class='curtain curtainLeft' src='images/curtainLeft.jpg' />
+<img class='curtain curtainRight' src='images/curtainRight.jpg' />
+<div id='stage'>
+<h1>Welcome To Pragyan Premier League </h1>
+<div id="mid">Pragyan Premier league Auction Round!</div>
+
+<!--
+<div id="timer" style="position:absolute;bottom:42%;width:100%;height:5%;font-family:century gothic;font-weight:bold;color:white;font-size:30px;text-align:center"></div>
+-->
+
+<div id="footer">&copy Powered by Delta Force,NIT-Trichy</div>
+</div>
+</div>
+<script>
+/*function time() {
+	var currentTime = new Date();
+	var x = "AM";
+	var h = currentTime.getHours();
+	var m = currentTime.getMinutes();
+    var s = currentTime.getSeconds();
+	
+    if (h == 0) {
+		h = 12;
+	} else if (h > 12) { 
+		h = h - 12;
+		x="PM";
+	}
+	if (h < 10) {
+		h = "0" + h;
+	}
+	if (m < 10) {
+		m = "0" + m;
+	}
+	if (s < 10) {
+		s = "0" + s;
+	}
+    var myClock = document.getElementById('timer');
+	myClock.innerHTML ="Auction Clock:  "+ h + ":" + m + ":" + s + " " + x;
+	setTimeout(time,1000);
+}
+time();
+*/
+</script>
+
+
+
+</body>
+</html>

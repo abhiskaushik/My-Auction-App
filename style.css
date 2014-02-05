@@ -1,0 +1,363 @@
+.title_ppl{
+width:100%;
+height:3%;
+}
+
+h2{
+text-align:center;
+color:white;
+}
+.country_players{
+height:20%;
+width:10%;
+ margin: 1px;
+   padding: 1px;
+   border: 1px solid rgba(0,0,0,0.5);
+   border-radius: 1px 1px 2px 2px;
+   background: rgba(0,0,0,0.25);
+  -moz-border-radius: 1px 1px 2px 2px;
+   -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(255,255,255,0.3);
+   -moz-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(255,255,255,0.3);
+ 
+ 
+
+}
+#ind{
+position:absolute;
+left:1%;
+
+}
+.country_players img{
+padding: 3px;  
+border:  1px solid #ccc;  
+background-color: #eee;  
+position:absolute; 
+top:  0; 
+left: 0 
+
+
+}
+#pak{
+position:absolute;
+left:12%;
+}
+#eng{
+position:absolute;
+left:23%;
+}
+#sa{
+position:absolute;
+left:34%;
+}
+#aus{
+position:absolute;
+left:45%;
+}
+#wi{
+position:absolute;
+left:56%;
+
+}
+#nz{
+
+position:absolute;
+left:67%;
+}
+#sl{
+position:absolute;
+left:78%;
+}
+#ban{
+position:absolute;
+left:89%;
+}
+#current_bid{
+ position:absolute;
+ top:38%; 
+left:3%; 
+ height:23%; color:white;
+ width:20%;
+ margin: 10px;
+   padding: 10px;
+   border: 1px solid rgba(0,0,0,0.5);
+   border-radius: 10px 10px 2px 2px;
+   background: rgba(0,0,0,0.25);
+  -moz-border-radius: 10px 10px 2px 2px;
+   -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(255,255,255,0.3);
+   -moz-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(255,255,255,0.3);
+ 
+
+
+
+}
+#cb_title{
+text-align:center;font-family:cursive;font-weight:bold;font-size:20px;
+color:white;
+}
+
+.team_bid_table{
+ 
+ height:50%;
+ width:15%;
+position:absolute; top:32%;right:1%;overflow:hidden;
+
+margin: 1px;
+   padding: 1px;
+   border: 1px solid rgba(0,0,0,0.5);
+   border-radius: 1px 1px 2px 2px;
+   background: rgba(0,0,0,0.25);
+  -moz-border-radius: 1px 1px 2px 2px;
+   -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(255,255,255,0.3);
+   -moz-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(255,255,255,0.3);
+ 
+
+}
+
+#team1{
+height:10%;
+background:rgba(0,0,0,0.8);
+width:97%;position:absolute;top:2%;border-radius:5%;
+}
+#team2{
+height:10%;
+background:rgba(0,0,0,0.8);
+width:97%;position:absolute;top:14%;border-radius:5%;
+}
+#team3{
+height:10%;
+background:rgba(0,0,0,0.8);
+width:97%;position:absolute;top:26%;border-radius:5%;
+}
+#team4{
+height:10%;
+background:rgba(0,0,0,0.8);
+width:97%;position:absolute;top:38%;border-radius:5%;
+}
+#team5{
+height:10%;
+background:rgba(0,0,0,0.8);
+width:97%;position:absolute;top:50%;border-radius:5%;
+}
+#team6{
+height
+:10%;
+background:rgba(0,0,0,0.8);
+width:97%;position:absolute;top:62%;border-radius:5%;
+}
+#team7{
+height:10%;
+background:rgba(0,0,0,0.8);
+width:97%;position:absolute;top:74%;border-radius:5%;
+}
+#team8{
+height:10%;
+background:rgba(0,0,0,0.8);
+width:97%;position:absolute;top:86%;border-radius:5%;
+}
+.t_name{
+font-family:cursive;font-size:15px;font-weight:bold;
+color:white; position:absolute; left:0%;
+}
+.t_price{
+font-family:cursive;font-size:20px;font-weight:bold;
+color:lightblue;position:absolute;right:5%;
+}
+#team1P{
+position:absolute;right:10%;
+}
+#team2P{
+position:absolute;right:10%;
+}
+#team3P{
+position:absolute;right:10%;
+}
+#team4P{
+position:absolute;right:10%;
+}
+#team5P{
+position:absolute;right:10%;
+}
+#team6P{
+position:absolute;right:10%;
+}
+#team7P{
+position:absolute;right:10%;
+}
+#team8P{
+position:absolute;right:10%;
+}
+#ytn{
+font-family:Arial;font-weight:italic;color:white;
+position:absolute; left:1%; bottom:13%;
+
+}
+.your_team{
+
+height:10%;
+width:5%;
+position:absolute;bottom:2%;
+
+margin: 1px;
+   padding: 1px;
+   border: 1px solid rgba(0,0,0,0.5);
+   border-radius: 1px 10px 2px 2px;
+   background: rgba(0,0,0,0.25); overflow:hidden;
+  -moz-border-radius: 1px 10px 2px 2px;
+   -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(255,255,255,0.3);
+   -moz-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(255,255,255,0.3);
+}
+
+#p1{
+position:absolute;
+left:1%;
+}
+#p2{
+position:absolute;
+left:7%;
+}
+#p3{
+position:absolute;
+left:13%;
+}
+#p4{
+position:absolute;
+left:19%;
+}
+#p5{
+position:absolute;
+left:25%;
+}
+#p6{
+position:absolute;
+left:31%;
+
+}
+#p7{
+
+position:absolute;
+left:37%;
+}
+#p8{
+position:absolute;
+left:43%;
+}
+#p9{
+position:absolute;
+left:49%;
+}
+#p10{
+position:absolute;
+left:55%;
+}
+#p11{
+position:absolute;
+left:61%;
+}
+#p12{
+position:absolute;
+left:67%;
+}
+#p13{
+position:absolute;
+left:73%;
+}
+#p14{
+position:absolute;
+left:79%;
+}
+#p15{
+position:absolute;
+left:85%;
+}
+#credit{
+position:absolute;left:91%;bottom:2%;height:12%;width:8%;
+text-align:center;font-family:cursive;font-weight:bold;font-size:15px;
+color:white;
+
+margin: 0px;
+   padding: 0px;
+   border: 1px solid rgba(0,0,0,0.5);
+   border-radius:50%;
+   background: rgba(0,0,0,0.25);
+  -moz-border-radius:50%;
+   -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(255,255,255,0.3);
+   -moz-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(255,255,255,0.3);
+ 
+}
+
+
+
+
+#current_name{
+position:absolute;
+left:46%;top:30%;height:4%;width:13%;background:grey;
+font-family:italic; font-weight:bold; font-size:20px;text-align:center;
+}
+#current_player{
+position:absolute;
+left:46%;top:34%;height:34%;width:13%;background:rgba(0,40,60,0.8);
+box-shadow:1px 1px 1px yellow;
+}
+.arrow-right {
+	width: 0; position:absolute;left:60%;top:28%;
+	height: 0; 
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid transparent;
+	cursor:pointer;
+	border-left: 40px solid grey;
+}
+.arrow-left {
+	width: 0; position:absolute; left:42%; top:28%;
+	height: 0; 
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid transparent; 
+	cursor:pointer;
+	border-right:40px solid grey; 
+}
+#batting_stats{
+position:absolute;
+left:27%;top:42%;height:25%;width:14%;
+   margin: 10px;
+   padding: 10px;
+   border: 1px solid rgba(0,0,0,0.5);
+   border-radius: 10px 10px 2px 2px;
+   background: rgba(0,0,0,0.25);
+  -moz-border-radius: 10px 10px 2px 2px;
+   -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(255,255,255,0.3);
+   -moz-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(255,255,255,0.3);
+ 
+
+
+
+}
+
+#bowling_stats{
+position:absolute;
+left:61%;top:42%;height:25%;width:14%;
+   margin: 10px;
+   padding: 10px;
+   border: 1px solid rgba(0,0,0,0.5);
+   border-radius: 10px 10px 2px 2px;
+   background: rgba(0,0,0,0.25);
+   -moz-border-radius: 10px 10px 2px 2px;
+   -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(255,255,255,0.3);
+   -moz-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(255,255,255,0.3);
+ 
+}
+.bid_value{
+font-family:cursive;font-weight:bold;font-size:20px;
+position:absolute;left:46%;top:72%;width:13%;height:6%;text-align:center;
+
+}
+#timer{
+position:absolute;top:30%; left:8%; height:5%;width:11%;
+background:black;
+text-align:center;font-family:cursive;font-weight:bold;font-size:25px;
+color:white;
+}
+
+#send{
+
+position:absolute;left:46%;top:80%;width:8%;height:3%;text-align:center;
+
+}

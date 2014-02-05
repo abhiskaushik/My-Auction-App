@@ -1,0 +1,15 @@
+1.  Front End look is like shown in Image:
+2. I am mentioning the backend mechanism we will be using for them.
+      a.  All the images in LABEL A (players img) will be retrieved on client side using jquery or from            server side using sockets.(depending upon which preloading speed).
+      b. TEAM-BID TABLE
+           1. it will be dynamic for current bidding player. Say Dhoni is bieng bid, all bids of a paticular                      team would be displayed in their bid row. We will also store the bids of all team for a each                   player in our Database. It will be done using socket.io from node server.
+           2. After a bid is complete (say after 5 mins,if bidding for one player continues for 5 min) , all                      the rows will be set to initial i.e blank.
+3. CURRENT BID
+      Whoever enters bid  & presses enter, the team name and their bid price would appear here 
+     if entered price is highest of all. (using SOCKET)
+
+4.PLAYER STATS
+      for every player stats figure will be stored in an array on server and we will fetch it alongwith      the player image.(using socket).
+
+5.YOUR TEAM
+     If your BID is the highest  till end of time your player will be appenede in your team BOX.

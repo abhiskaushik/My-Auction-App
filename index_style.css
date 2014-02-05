@@ -1,0 +1,112 @@
+		img.curtain{
+			height:100%; 
+			z-index:99; 
+		}
+		
+		
+		img.curtainLeft{
+			position:absolute; 
+			left:0px;  
+                        width:49%;
+		}
+		
+	
+		img.curtainRight{
+			position:absolute; 
+			right:0px; 
+		        width:49%;
+                    
+}
+		
+		
+		.curtain_wrapper{
+			width:100%; 
+			height:100%; 
+			position:relative; 
+			overflow:hidden; 
+			color:white; 
+			background:black; 
+			
+		}
+		
+		
+		.content{
+			position:relative; 
+			width: 90%; 
+			margin:0px auto; 
+			display:none; 
+		}
+		
+		
+		.description{
+			position:absolute; 
+			top:0px; 
+			z-index:100; 
+			padding:5px; 
+			text-align:center;
+			font-size:15px;
+			background:#eee;
+			border:1px solid #ccc;
+			border-left:0px;
+			border-top:0px;
+			color:black;
+		}			
+      html {
+           
+            background-color: #0C0C0C;
+            background-size: 100% 100%;
+            height: 100%;
+            width: 100%;
+        }
+ 
+      
+        h1 {
+            font-family: Century Gothic, sans-serif;
+            font-size: 80px;
+            text-align: center;
+            color: transparent;
+            text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.15);
+        }
+
+
+.mid {
+   
+   width: 280px;
+   height: 400px;
+   margin: 10px;
+   padding: 10px;
+   border: 1px solid rgba(0,0,0,0.5);
+   border-radius: 10px 10px 2px 2px;
+   background: rgba(0,0,0,0.25);
+   box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
+   -o-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
+   -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
+   -moz-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
+ 
+}
+.mid input {
+      position:absolute; left:28px;
+    border: 1px solid white; 
+    -webkit-box-shadow: 
+      inset 0 0 6px  rgba(0,0,0,0.1),
+            0 0 12px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    padding: 5px;
+    background: rgba(255,255,255,0.5);
+    margin: 0 0 3px 0; 
+}
+
+.mid input[type=text]{
+font-weight:bold;
+font-family:cursive;
+
+}
+
+
+
+
